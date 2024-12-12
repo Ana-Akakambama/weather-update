@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central Province- 5-Day Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="container">
+    <!-- Header -->
+    <header>
+      <h1>Weather Forecast</h1>
+      <input type="text" id="city-search" placeholder="Enter City Name..." />
+      <button id="search-btn" class="menu-btn">Search</button>
+      <button id="toggle-mode" class="menu-btn">Dark Mode</button>
+    </header>
+
+    <!-- Weather Information -->
+    <main>
+      <section id="current-weather">
+        <h2 id="city-name">City Name</h2>
+        <p id="date">Date: <span id="current-date"></span></p>
+        <div id="weather-details">
+          <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+          <p><strong>Weather:</strong> <span id="weather-description"></span></p>
+          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+          <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> km/h</p>
+        </div>
+      </section>
+
+      <!-- 5-Day Weather Forecast -->
+      <section id="five-day-forecast">
+        <h2>5-Day Weather Forecast</h2>
+        <div id="forecast-container"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Anang'anga Akakambama_1704375254</a></p>
+      <a href="https://www.zrdc.org" target="_blank">ZRDC</a>
+      <a href="https://www.icu.edu.zm" target="_blank">ICU University</a>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
